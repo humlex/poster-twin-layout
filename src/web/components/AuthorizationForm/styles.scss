@@ -1,0 +1,82 @@
+@import "../../theme/colors.scss";
+
+body {
+  background-color: $grey;
+
+  .auth__container {
+    background-color: $white;
+    border-radius: 6px;
+    box-shadow: 0 1px 1px $shadow;
+    max-width: 90vw;
+    height: 70vh;
+    margin: 8%;
+
+    label {
+      font-weight: 600;
+      display: block;
+      margin-bottom: 1%;
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+
+    .auth-image {
+      width: 100%;
+      border-radius: 6px 6px 0 0;
+      cursor: pointer;
+    }
+    .auth-form-container {
+      padding: 8% 10% 0 10%;
+
+      .form-title {
+        font-size: 1.4em;
+        margin-bottom: 20px;
+      }
+      .login-input {
+        margin-bottom: 20px;
+        line-height: 25px;
+        width: 100%;
+        border: 1px solid rgb(146, 142, 142);
+        border-radius: 3px;
+      }
+      .password-input {
+        margin-bottom: 15px;
+        line-height: 25px;
+        width: 100%;
+        border: 1px solid rgb(146, 142, 142);
+        border-radius: 3px;
+      }
+
+      .another-pc__container {
+        .another-pc-checkbox {
+          margin-right: 40px;
+        }
+        .another-pc-link {
+        }
+      }
+
+      .submit__container {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .submit-btn {
+          padding: 10px 15px 10px 15px;
+          border: none;
+          border-radius: 3px;
+          font-size: 1.2em;
+          color: $white;
+          background-color: $green;
+          margin-right: 40px;
+        }
+        .forgot-password {
+          font-size: 0.8em;
+          color: $blue;
+        }
+      }
+    }
+  }
+}
