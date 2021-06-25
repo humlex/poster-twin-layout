@@ -8,18 +8,12 @@ body {
     border-radius: 6px;
     box-shadow: 0 1px 1px $shadow;
     max-width: 90vw;
-    height: 70vh;
     margin: 8%;
 
     label {
       font-weight: 600;
       display: block;
-      margin-bottom: 1%;
-    }
-
-    a {
-      color: black;
-      text-decoration: none;
+      margin-bottom: 6px;
     }
 
     .auth-image {
@@ -32,51 +26,68 @@ body {
 
       .form-title {
         font-size: 1.4em;
+        font-weight: bold;
         margin-bottom: 20px;
       }
       .login-input {
         margin-bottom: 20px;
-        line-height: 25px;
+        line-height: 30px;
         width: 100%;
-        border: 1px solid rgb(146, 142, 142);
+        border: 1px solid #d8d8d8d8;
         border-radius: 3px;
       }
       .password-input {
         margin-bottom: 15px;
-        line-height: 25px;
+        line-height: 30px;
         width: 100%;
-        border: 1px solid rgb(146, 142, 142);
+        border: 1px solid #d8d8d8d8;
         border-radius: 3px;
       }
 
       .another-pc__container {
         .another-pc-checkbox {
-          margin-right: 40px;
+          margin-right: 5px;
         }
         .another-pc-link {
+          text-decoration: none;
+          color: black;
         }
       }
 
       .submit__container {
-        margin-top: 50px;
+        padding-bottom: 25px;
+        margin-top: 8%;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
         .submit-btn {
-          padding: 10px 15px 10px 15px;
+          padding: 10px 20px 10px 20px;
           border: none;
           border-radius: 3px;
-          font-size: 1.2em;
+          font-size: 1.1em;
           color: $white;
           background-color: $green;
           margin-right: 40px;
         }
         .forgot-password {
           font-size: 0.8em;
+          text-decoration: none;
           color: $blue;
         }
       }
+    }
+  }
+  .footer {
+    margin: 20% 8% 10% 8%;
+    display: flex;
+    justify-content: space-between;
+
+    .poster {
+      color: #9b9b9e;
+    }
+    .support {
+      color: #9b9b9e;
     }
   }
 }

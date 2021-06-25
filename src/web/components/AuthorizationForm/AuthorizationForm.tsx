@@ -46,7 +46,14 @@ const AuthorizationForm: FC<{}> = () => {
           </form>
         </div>
       </div>
-      <footer className="footer"></footer>
+      <footer className="footer">
+        <a href="#" className="poster">
+          Poster
+        </a>
+        <a href="#" className="support">
+          Техническая поддержка
+        </a>
+      </footer>
     </>
   );
 };
