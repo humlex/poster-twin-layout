@@ -35,6 +35,7 @@ body {
         width: 100%;
         border: 1px solid #d8d8d8d8;
         border-radius: 3px;
+        padding: 0 10px 0 10px;
       }
       .password-input {
         margin-bottom: 15px;
@@ -42,6 +43,7 @@ body {
         width: 100%;
         border: 1px solid #d8d8d8d8;
         border-radius: 3px;
+        padding: 0 10px 0 10px;
       }
 
       .another-pc__container {
@@ -88,6 +90,24 @@ body {
     }
     .support {
       color: #9b9b9e;
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    .auth__container {
+      display: flex;
+
+      .auth-image {
+        width: 50%;
+        border-radius: 6px 0 0 6px;
+      }
+
+      .auth-form-container {
+        padding: 0;
+        margin: auto;
+      }
     }
   }
 }
