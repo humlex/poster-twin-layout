@@ -1,13 +1,13 @@
 import React, { FC } from "react";
 
-import AuthorizationForm from "./web/components/AuthorizationForm";
+import SideBar from "./web/components/SideBar";
 
 import "./App.scss";
 
 const App: FC<{}> = () => {
   return (
     <div className="App">
-      <AuthorizationForm />
+      <SideBar />
     </div>
   );
 };

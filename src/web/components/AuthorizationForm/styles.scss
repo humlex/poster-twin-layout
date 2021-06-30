@@ -71,6 +71,7 @@ body {
           color: $white;
           background-color: $green;
           margin-right: 40px;
+          cursor: pointer;
         }
         .forgot-password {
           font-size: 0.8em;
@@ -107,6 +108,12 @@ body {
       .auth-form-container {
         padding: 0;
         margin: auto;
+
+        .form-title {
+          font-size: 1.4em;
+          font-weight: bold;
+          margin: 50px 0 30px 0;
+        }
       }
     }
   }
