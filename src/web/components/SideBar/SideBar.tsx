@@ -1,25 +1,13 @@
-import React, { useState } from "react";
-import { MdMenu } from "react-icons/md";
-import Menu from "./Menu";
+import React from 'react';
 
-import "./styles.scss";
+import DesktopSideBar from './DesktopSideBar';
+import MobileSideBar from './MobileSideBar';
 
-export const SideBar = () => {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
-
-  const handleSideBarControl = () => {
-    setIsOpen(!isOpen);
-  };
-
+const SideBar = () => {
   return (
     <>
-      <header className="sidebar__header">
-        <div className="logo__container">
-          <MdMenu className="menu-logo" onClick={handleSideBarControl} />
-          <span className="logo-name">Poster</span>
-        </div>
-      </header>
-      {isOpen && <Menu handleSideBarControl={handleSideBarControl} />}
+      <DesktopSideBar />
+      <MobileSideBar />
     </>
   );
 };

@@ -1,13 +1,13 @@
-import React, { FC } from "react";
+import React, { FC } from 'react';
 
-import SideBar from "./web/components/SideBar";
+import Router from './web/Router';
 
-import "./App.scss";
+import './App.scss';
 
 const App: FC<{}> = () => {
   return (
     <div className="App">
-      <SideBar />
+      <Router />
     </div>
   );
 };
