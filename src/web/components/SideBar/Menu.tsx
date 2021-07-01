@@ -21,7 +21,7 @@ const Menu: FC<MenuProps> = ({ handleSideBarControl }) => (
         <div className="footer">
           <div className="user__container">
             <HiOutlineUserCircle className="user-img" />
-            <div className="username">Рауф</div>
+            <div className="username">Username</div>
             <IoMdArrowDropdown className="arrow-logo" />
           </div>
         </div>

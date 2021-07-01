@@ -64,6 +64,7 @@
           font-size: 20px;
           .logo {
             margin-right: 25px;
+            color: $darkGrey;
           }
 
           .item-name {
@@ -99,10 +100,59 @@
 
         .user-img {
           font-size: 50px;
+          color: $darkGrey;
         }
         .username {
           font-size: 20px;
           margin-left: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 415px) {
+  .sidebar__header {
+    display: none;
+
+    .logo__container {
+      .menu-logo {
+      }
+      .logo-name {
+      }
+    }
+  }
+
+  .sidebar-menu__wrapper {
+    .sidebar-menu {
+      .header-menu {
+        .close-logo {
+        }
+      }
+
+      .menu-body {
+        .menu-item {
+          .item {
+            .logo {
+            }
+
+            .item-name {
+            }
+          }
+
+          .item-arrow {
+            .arrow-logo {
+            }
+          }
+        }
+      }
+
+      .footer {
+        .user__container {
+          .user-img {
+          }
+          .username {
+          }
         }
       }
     }
