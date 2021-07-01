@@ -48,40 +48,6 @@
       }
     }
 
-    .menu-body {
-      .menu-item {
-        margin-left: 20px;
-        height: 54px;
-        line-height: 54px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        .item {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          font-size: 20px;
-          .logo {
-            margin-right: 25px;
-            color: $darkGrey;
-          }
-
-          .item-name {
-            display: block;
-          }
-        }
-
-        .item-arrow {
-          margin-right: 20px;
-
-          .arrow-logo {
-            color: $blue;
-          }
-        }
-      }
-    }
-
     .footer {
       height: 10vh;
       width: 100%;

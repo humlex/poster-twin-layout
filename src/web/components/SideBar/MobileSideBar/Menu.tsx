@@ -1,10 +1,12 @@
-import React, { FC } from "react";
-import { MdClear } from "react-icons/md";
-import { HiOutlineUserCircle } from "react-icons/hi";
-import { IoMdArrowDropdown } from "react-icons/io";
-import ListItems from "./ListItems";
+import React, { FC } from 'react';
+import { MdClear } from 'react-icons/md';
+import { HiOutlineUserCircle } from 'react-icons/hi';
+import { IoMdArrowDropdown } from 'react-icons/io';
 
-import "./styles.scss";
+import MenuItem from '../MenuItem/MobileMenuItem';
+
+import { menuItems } from '../menu-items-list';
+import './styles.scss';
 
 interface MenuProps {
   handleSideBarControl: any;
@@ -17,7 +19,11 @@ const Menu: FC<MenuProps> = ({ handleSideBarControl }) => (
         <div className="header-menu">
           <MdClear className="close-logo" onClick={handleSideBarControl} />
         </div>
-        <ListItems />
+        <ul className="menu-body">
+          {menuItems.map((menuItem) => (
+            <MenuItem icon={menuItem.icon} title={menuItem.title} />
+          ))}
+        </ul>
         <div className="footer">
           <div className="user__container">
             <HiOutlineUserCircle className="user-img" />

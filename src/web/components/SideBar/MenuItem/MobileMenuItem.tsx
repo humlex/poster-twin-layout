@@ -2,15 +2,18 @@ import React from 'react';
 
 import { IoMdArrowDropdown } from 'react-icons/io';
 
-type MenuItemPropsType = {
-  icon: string;
+import './styles.scss';
+
+type MobileMenuItemPropsType = {
+  icon: any;
   title: string;
 };
 
-const MenuItem = ({ icon, title }: MenuItemPropsType) => {
+const MobileMenuItem = ({ icon: Icon, title }: MobileMenuItemPropsType) => {
   return (
-    <li className="menu-item">
+    <li className="menu-item arrow-enabled">
       <div className="item">
+        <Icon className="logo" />
         <span className="item-name">{title}</span>
       </div>
       <div className="item-arrow">
@@ -20,4 +23,4 @@ const MenuItem = ({ icon, title }: MenuItemPropsType) => {
   );
 };
 
-export default MenuItem;
+export default MobileMenuItem;

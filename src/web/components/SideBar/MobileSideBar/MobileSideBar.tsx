@@ -1,10 +1,11 @@
-import React, { useState } from "react";
-import { MdMenu } from "react-icons/md";
-import Menu from "./Menu";
+import React, { useState } from 'react';
+import { MdMenu } from 'react-icons/md';
 
-import "./styles.scss";
+import Menu from './Menu';
 
-export const SideBar = () => {
+import './styles.scss';
+
+export const MobileSideBar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const handleSideBarControl = () => {
@@ -24,4 +25,4 @@ export const SideBar = () => {
   );
 };
 
-export default SideBar;
+export default MobileSideBar;
