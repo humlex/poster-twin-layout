@@ -1,4 +1,5 @@
-import AuthorizationPage from './AuthorizationPage';
-import MainPage from './MainPage';
+import AuthorizationPage from "./AuthorizationPage";
+import ClientsPage from "./ClientsPage";
+import MainPage from "./MainPage";
 
-export { AuthorizationPage, MainPage };
+export { AuthorizationPage, ClientsPage, MainPage };

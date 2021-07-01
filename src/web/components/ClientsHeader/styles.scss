@@ -1,0 +1,70 @@
+@import "../../theme/colors.scss";
+
+.clients-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid $grey;
+
+  .info {
+    margin-left: 25px;
+
+    .title {
+      font-size: 18px;
+      margin-right: 20px;
+    }
+    .counter {
+      color: $darkGrey;
+    }
+  }
+  .options {
+    margin-right: 25px;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div:nth-child(n) {
+      color: $blue;
+      margin-left: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+      border-radius: 8px;
+      padding: 10px;
+      user-select: none;
+
+      &:hover {
+        background-color: rgba(137, 196, 244, 0.2);
+      }
+    }
+
+    .option-item {
+      margin-left: 10px;
+    }
+
+    .item-icon {
+      color: #438de2;
+    }
+
+    .filter-dropdown {
+    }
+    .export {
+    }
+    .print {
+    }
+    .calendar {
+      border: 1px solid $blue;
+      border-radius: 10px;
+      padding: 10px 16px;
+      color: $blue;
+      transition: all 0.3s ease-out;
+
+      &:hover {
+        background-color: rgba(137, 196, 244, 0.2);
+      }
+    }
+  }
+}

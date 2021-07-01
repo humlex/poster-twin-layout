@@ -1,8 +1,9 @@
-import React, { FC } from 'react';
+import React, { FC } from "react";
 
-import Router from './web/Router';
+import Router from "./web/Router";
+import ClientsPage from "./web/pages/ClientsPage";
 
-import './App.scss';
+import "./App.scss";
 
 const App: FC<{}> = () => {
   return (

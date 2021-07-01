@@ -1,0 +1,52 @@
+@import "../../theme/colors.scss";
+
+.filter-container {
+  display: flex;
+  align-items: center;
+  padding: 20px 25px 20px 25px;
+
+  .search-container {
+    height: 35px;
+    width: 170px;
+    border: 1px solid $grey;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+
+    .search-icon {
+      margin: 5px 10px 5px 10px;
+      color: $darkGrey;
+    }
+
+    .search-input {
+      width: 130px;
+      border: none;
+      outline: none;
+
+      &::placeholder {
+        color: #7e7b7b93;
+      }
+    }
+  }
+  .btn-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div:nth-child(n) {
+      display: flex;
+      align-items: center;
+      margin-left: 25px;
+      color: $blue;
+      user-select: none;
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+      padding: 10px;
+      border-radius: 8px;
+
+      &:hover {
+        background-color: rgba(137, 196, 244, 0.2);
+      }
+    }
+  }
+}
