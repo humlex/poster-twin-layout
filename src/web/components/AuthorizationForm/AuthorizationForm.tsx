@@ -1,13 +1,19 @@
 import react, { FC } from "react";
+import { useHistory, Redirect } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { Formik } from "formik";
-
+import { logInUser, logOutUser } from "../../store/Authorization/actions";
+import { IUserData } from "../../store/types";
+import { IUseSelectorState } from "../../store/types";
 import "./styles.scss";
 
 const AuthorizationForm: FC<{}> = () => {
   const dispatch = useDispatch();
-  const cash = useSelector((state) => state);
-  console.log(cash);
+  const history = useHistory();
+  const cash = useSelector(
+    (state: IUseSelectorState) => state.Authorization.isLogged
+  );
+
   return (
     <>
       <div className="auth__container">
@@ -23,8 +29,13 @@ const AuthorizationForm: FC<{}> = () => {
               password: "",
             }}
             onSubmit={(values, { resetForm }) => {
-              console.log(values);
-              resetForm();
+              console.log(1, cash);
+              dispatch(logInUser(values));
+              // if (cash) {
+              //   console.log(2, cash);
+              //   history.push("/home");
+              // }
+              // resetForm();
             }}
           >
             {({
@@ -86,6 +97,16 @@ const AuthorizationForm: FC<{}> = () => {
           Техническая поддержка
         </a>
       </footer>
+      {cash && <Redirect to="home" />}
+      <button
+        onClick={() => {
+          dispatch(logOutUser());
+          console.log("isLogged: ", cash);
+        }}
+      >
+        Вход
+      </button>
+      <button>Выход</button>
     </>
   );
 };

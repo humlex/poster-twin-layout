@@ -1,11 +1,15 @@
 export type initialStateProps = {
-  login: string;
+  email: string;
   password: string;
   isLogged: boolean;
 };
 
+export interface IUseSelectorState {
+  Authorization: initialStateProps;
+}
+
 export interface IUserData {
-  login: string;
+  email: string;
   password: string;
 }
 

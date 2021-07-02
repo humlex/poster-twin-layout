@@ -36,6 +36,10 @@ body {
         border: 1px solid #d8d8d8d8;
         border-radius: 3px;
         padding: 0 10px 0 10px;
+        transition: all 0.3 ease;
+        &:focus {
+          outline-color: $blue;
+        }
       }
       .password-input {
         margin-bottom: 15px;
@@ -44,6 +48,8 @@ body {
         border: 1px solid #d8d8d8d8;
         border-radius: 3px;
         padding: 0 10px 0 10px;
+        outline-color: $blue;
+        transition: all 0.3 ease;
       }
 
       .another-pc__container {
