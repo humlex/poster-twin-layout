@@ -1,13 +1,12 @@
-import React from 'react';
-import { Route } from 'react-router-dom';
+import React from "react";
+import { Route } from "react-router-dom";
 
-import Sidebar from '../components/SideBar';
+import Sidebar from "../components/Main/SideBar";
 
 const DashboardRoute = (props: any) => {
   return (
     <div>
-      <Sidebar />
-
+      {/* <Sidebar /> */}
       <main>
         <Route {...props} />
       </main>
