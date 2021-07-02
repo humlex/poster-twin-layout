@@ -1,5 +1,4 @@
 import React, { FC } from "react";
-
 import Router from "./web/Router";
 import ClientsPage from "./web/pages/ClientsPage";
 

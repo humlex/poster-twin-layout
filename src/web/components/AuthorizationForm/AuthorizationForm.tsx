@@ -1,9 +1,13 @@
 import react, { FC } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { Formik } from "formik";
 
 import "./styles.scss";
 
 const AuthorizationForm: FC<{}> = () => {
+  const dispatch = useDispatch();
+  const cash = useSelector((state) => state);
+  console.log(cash);
   return (
     <>
       <div className="auth__container">
