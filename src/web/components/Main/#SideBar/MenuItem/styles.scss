@@ -5,12 +5,17 @@
   box-sizing: border-box;
     
   .menu-item {
-    height: max-content;
+    height: 40px;
     display: flex;
     flex-direction: column;
     cursor: pointer;
     font-weight: 200;   
     padding: 0 20px; 
+    transition: height 0.8s;
+
+    &.active{
+      height: max-content;
+    }
     
     .arrow-enabled{
       display: flex;
@@ -46,20 +51,17 @@
 
     .submenu{
       padding-left: 20px;
-      transition: 0.5s ease all;
 
       &.inactive{
         height: 0;
         opacity: 0;
         visibility: hidden;
-        transform: translateY(-30px);
       }
 
       &.active{
         height: 100%;
         opacity: 1;
         visibility: visible;
-        transform: translateY(0px);
       }
 
       .submenu__link{
@@ -84,8 +86,8 @@
 
 @media screen and (min-width: 415px) {
   .menu-body{
-    .menu-item {
-    
+    width: 200px;
+    .menu-item {    
       .item {
         font-size: 15px;
 

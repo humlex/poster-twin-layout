@@ -80,47 +80,10 @@
 @media screen and (min-width: 415px) {
   .sidebar__header {
     display: none;
-
-    .logo__container {
-      .menu-logo {
-      }
-      .logo-name {
-      }
-    }
   }
 
   .sidebar-menu__wrapper {
-    .sidebar-menu {
-      .header-menu {
-        .close-logo {
-        }
-      }
-
-      .menu-body {
-        .menu-item {
-          .item {
-            .logo {
-            }
-
-            .item-name {
-            }
-          }
-
-          .item-arrow {
-            .arrow-logo {
-            }
-          }
-        }
-      }
-
-      .footer {
-        .user__container {
-          .user-img {
-          }
-          .username {
-          }
-        }
-      }
-    }
+    width: 200px;
+    max-width: max-content;
   }
 }

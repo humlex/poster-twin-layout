@@ -6,3 +6,13 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
+
+.main-page-wrapper{
+  width: calc(100vw - 200px);
+}
+
+.page-wrapper{
+  display: flex;
+  max-width: 100vw;
+  box-sizing: border-box;
+}

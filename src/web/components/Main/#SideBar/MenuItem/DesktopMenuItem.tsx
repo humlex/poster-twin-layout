@@ -18,7 +18,10 @@ const DesktopMenuItem = ({
   onClick,
 }: DesktopMenuItemPropsType) => {
   return (
-    <li className="menu-item" onClick={onClick}>
+    <li
+      className={isActive ? 'menu-item active' : 'menu-item'}
+      onClick={onClick}
+    >
       <div className="item">
         <Icon className="logo" />
         <span className={isActive ? 'item-name active' : 'item-name'}>

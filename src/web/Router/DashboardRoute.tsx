@@ -5,9 +5,9 @@ import Sidebar from '../components/Main/#SideBar';
 
 const DashboardRoute = (props: any) => {
   return (
-    <div>
+    <div className="page-wrapper">
       <Sidebar />
-      <main>
+      <main className="main-page-wrapper">
         <Route {...props} />
       </main>
     </div>

@@ -1,11 +1,29 @@
 import { BiStats } from 'react-icons/bi';
 import { FaWarehouse } from 'react-icons/fa';
 import { FiFileText } from 'react-icons/fi';
-import { IoSettingsOutline } from 'react-icons/io5';
+import { IoSettingsOutline, IoStatsChart } from 'react-icons/io5';
 import { MdAttachMoney } from 'react-icons/md';
 import { SiOpenaccess } from 'react-icons/si';
 
 export const menuItems = [
+  {
+    icon: IoStatsChart,
+    title: 'Статистика',
+    submenu: [
+      { title: 'Продажі', link: '/' },
+      { title: 'Клієнти', link: '/clients' },
+      { title: 'Працівники', link: '/workers' },
+      { title: 'Цехи', link: '/workshop' },
+      { title: 'Столи', link: '/tables' },
+      { title: 'Категорії', link: '/categories' },
+      { title: 'Товари', link: '/products' },
+      { title: 'АВС-аналіз', link: '/abc' },
+      { title: 'Чеки', link: '/checks' },
+      { title: 'Оплати', link: '/payments' },
+      { title: 'Податки', link: '/taxes' },
+    ],
+  },
+
   {
     icon: MdAttachMoney,
     title: 'Финансы',

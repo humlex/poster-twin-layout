@@ -1,7 +1,7 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import DashboardRoute from "./DashboardRoute";
+import DashboardRoute from './DashboardRoute';
 
 import {
   AuthorizationPage,
@@ -16,7 +16,7 @@ import {
   ChecksPage,
   PaymentsPage,
   TaxesPage,
-} from "../pages";
+} from '../pages';
 
 const RouteSchema = () => (
   <Router>
