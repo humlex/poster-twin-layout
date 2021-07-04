@@ -13,6 +13,9 @@ import {
   CategoriesPage,
   ProductsPage,
   ABCanalysisPage,
+  ChecksPage,
+  PaymentsPage,
+  TaxesPage,
 } from "../pages";
 
 const RouteSchema = () => (
@@ -27,6 +30,9 @@ const RouteSchema = () => (
       <DashboardRoute exact path="/categories" component={CategoriesPage} />
       <DashboardRoute exact path="/products" component={ProductsPage} />
       <DashboardRoute exact path="/abc" component={ABCanalysisPage} />
+      <DashboardRoute exact path="/checks" component={ChecksPage} />
+      <DashboardRoute exact path="/payments" component={PaymentsPage} />
+      <DashboardRoute exact path="/taxes" component={TaxesPage} />
 
       <Route exact component={() => <h1 className="text-center"> 404 </h1>} />
     </Switch>
