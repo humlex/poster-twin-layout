@@ -21,8 +21,8 @@ const MobileMenuItem = ({
 }: MobileMenuItemPropsType) => {
   return (
     <li className="menu-item" onClick={onClick}>
-      <div>
-        <div className="item arrow-enabled">
+      <div className="arrow-enabled">
+        <div className="item">
           <Icon className="logo" />
           <span className="item-name">{title}</span>
         </div>

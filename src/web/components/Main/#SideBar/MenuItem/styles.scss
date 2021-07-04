@@ -1,4 +1,4 @@
-@import "../../../theme/colors.scss";
+@import "../../../../theme/colors.scss";
 
 .menu-body{
   width: 75vw;
@@ -6,12 +6,19 @@
     
   .menu-item {
     height: max-content;
-    max-width: max-content;
     display: flex;
     flex-direction: column;
     cursor: pointer;
     font-weight: 200;   
-    padding: 0 20px;  
+    padding: 0 20px; 
+    
+    .arrow-enabled{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+      min-width: 100%;
+    }
 
     .item {
       display: flex;
@@ -71,15 +78,7 @@
     .active{    
       font-weight: 500;
     }
-  }
-
-  .arrow-enabled{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    min-width: 100%;
-  }
+  }  
 }
 
 
