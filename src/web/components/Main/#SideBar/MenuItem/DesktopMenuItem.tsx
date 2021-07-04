@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import cn from 'classnames';
 
 import './styles.scss';
 
@@ -19,17 +20,16 @@ const DesktopMenuItem = ({
 }: DesktopMenuItemPropsType) => {
   return (
     <li
-      className={isActive ? 'menu-item active' : 'menu-item'}
+      className={cn('menu-item', { active: isActive })}
       onClick={onClick}
+      style={isActive ? { height: submenu ? submenu?.length * 40 : 40 } : {}}
     >
       <div className="item">
         <Icon className="logo" />
-        <span className={isActive ? 'item-name active' : 'item-name'}>
-          {title}
-        </span>
+        <span className={cn('item-name', { active: isActive })}>{title}</span>
       </div>
       {submenu && (
-        <ul className={isActive ? 'submenu active' : 'submenu inactive'}>
+        <ul className={cn('submenu', { active: isActive })}>
           {submenu?.map((el) => (
             <a href={el.link} className="submenu__link">
               {el.title}
