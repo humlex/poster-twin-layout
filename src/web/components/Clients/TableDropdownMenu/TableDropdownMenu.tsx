@@ -1,5 +1,6 @@
-import React from "react";
-import "./styles.scss";
+import React from 'react';
+
+import './styles.scss';
 
 const TableDropdownMenu = () => {
   return (
@@ -39,9 +40,7 @@ const TableDropdownMenu = () => {
           <span className="column-name">Прибыль</span>
         </li>
       </ul>
-      <input type="button" className="default-btn">
-        По умолчанию
-      </input>
+      <input type="button" className="default-btn" placeholder="По умолчанию" />
     </div>
   );
 };
