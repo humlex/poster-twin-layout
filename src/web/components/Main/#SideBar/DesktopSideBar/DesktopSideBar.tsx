@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
 import DesktopMenuItem from '../MenuItem/DesktopMenuItem';
-
 import { menuItems } from '../menu-items-list';
 
 import './styles.scss';

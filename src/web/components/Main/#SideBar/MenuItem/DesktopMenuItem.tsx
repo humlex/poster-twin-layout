@@ -22,7 +22,9 @@ const DesktopMenuItem = ({
     <li
       className={cn('menu-item', { active: isActive })}
       onClick={onClick}
-      style={isActive ? { height: submenu ? submenu?.length * 40 : 40 } : {}}
+      style={
+        isActive ? { height: submenu ? submenu?.length * 40 + 40 : 40 } : {}
+      }
     >
       <div className="item">
         <Icon className="logo" />
