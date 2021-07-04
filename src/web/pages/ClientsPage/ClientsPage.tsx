@@ -1,12 +1,12 @@
 import React from "react";
-import ClientsHeader from "../../components/Clients/ClientsHeader";
-import ClientsFilterPannel from "../../components/Clients/ClientsFilterPannel";
+import Header from "../../components/Header/Header";
+import FilterPannel from "../../components/Header/FilterPannel";
 import ClientsTable from "../../components/Clients/ClientsTable";
 
 const ClientsPage = () => (
   <>
-    <ClientsHeader />
-    <ClientsFilterPannel />
+    <Header title={"Клиенты"} />
+    <FilterPannel />
     <ClientsTable />
   </>
 );

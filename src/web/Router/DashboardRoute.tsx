@@ -1,7 +1,7 @@
 import React from "react";
 import { Route } from "react-router-dom";
 
-import Sidebar from "../components/Main/SideBar";
+// import Sidebar from "../components/Main/SideBar";
 
 const DashboardRoute = (props: any) => {
   return (

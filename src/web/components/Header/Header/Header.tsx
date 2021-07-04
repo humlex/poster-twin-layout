@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { FC, useState } from "react";
 import { ImTable2 } from "react-icons/im";
 import { RiArrowDownSFill } from "react-icons/ri";
 import { CgExport } from "react-icons/cg";
@@ -6,14 +6,18 @@ import { AiOutlinePrinter } from "react-icons/ai";
 
 import "./styles.scss";
 
-const ClientsHeader = () => {
+interface HeaderProps {
+  title: string;
+}
+
+const Header: FC<HeaderProps> = ({ title }) => {
   const [startDate, setStartDate] = useState<any>(new Date());
 
   return (
     <>
       <header className="clients-header">
         <div className="info">
-          <span className="title">Клиенты</span>
+          <span className="title">{title}</span>
           <span className="counter">0</span>
         </div>
         <div className="options">
@@ -37,4 +41,4 @@ const ClientsHeader = () => {
   );
 };
 
-export default ClientsHeader;
+export default Header;

@@ -6,7 +6,7 @@ import { HiPlusSm } from "react-icons/hi";
 
 import "./styles.scss";
 
-const ClientsFilterPannel = () => {
+const FilterPannel = () => {
   return (
     <div className="filter-container">
       <div className="search-container">
@@ -33,4 +33,4 @@ const ClientsFilterPannel = () => {
   );
 };
 
-export default ClientsFilterPannel;
+export default FilterPannel;
