@@ -10,6 +10,9 @@ import {
   WorkersPage,
   WorkshopPage,
   TablesPage,
+  CategoriesPage,
+  ProductsPage,
+  ABCanalysisPage,
 } from "../pages";
 
 const RouteSchema = () => (
@@ -21,6 +24,9 @@ const RouteSchema = () => (
       <DashboardRoute exact path="/workers" component={WorkersPage} />
       <DashboardRoute exact path="/workshop" component={WorkshopPage} />
       <DashboardRoute exact path="/tables" component={TablesPage} />
+      <DashboardRoute exact path="/categories" component={CategoriesPage} />
+      <DashboardRoute exact path="/products" component={ProductsPage} />
+      <DashboardRoute exact path="/abc" component={ABCanalysisPage} />
 
       <Route exact component={() => <h1 className="text-center"> 404 </h1>} />
     </Switch>
