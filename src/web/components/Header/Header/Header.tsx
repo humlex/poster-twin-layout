@@ -8,13 +8,17 @@ import "./styles.scss";
 
 interface HeaderProps {
   title: string;
+  menuDropdown: FC;
 }
 
-const Header: FC<HeaderProps> = ({ title }) => {
-  const [startDate, setStartDate] = useState<any>(new Date());
+const Header: FC<HeaderProps> = ({ title, menuDropdown: MenuDropdown }) => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
     <>
+      <div className="props">
+        <MenuDropdown />
+      </div>
       <header className="clients-header">
         <div className="info">
           <span className="title">{title}</span>
@@ -23,7 +27,15 @@ const Header: FC<HeaderProps> = ({ title }) => {
         <div className="options">
           <div className="filter-dropdown">
             <ImTable2 className="item-icon" />
-            <span className="option-item">Столбцы</span>
+            <span
+              className="option-item"
+              onClick={() => {
+                setIsOpen(!isOpen);
+                console.log(isOpen);
+              }}
+            >
+              Столбцы
+            </span>
             <RiArrowDownSFill className="item-icon" />
           </div>
           <div className="export">
