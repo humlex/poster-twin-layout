@@ -8,7 +8,7 @@
   .search-container {
     height: 35px;
     width: 170px;
-    border: 1px solid $grey;
+    border: 1px solid rgb(228, 223, 223);
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -22,6 +22,7 @@
       width: 130px;
       border: none;
       outline: none;
+      background: inherit;
 
       &::placeholder {
         color: #7e7b7b93;

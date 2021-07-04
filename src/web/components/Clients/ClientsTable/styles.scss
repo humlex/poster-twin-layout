@@ -6,13 +6,13 @@
   width: 100%;
 
   .table-header {
-    border-bottom: 1px solid $grey;
+    border-bottom: 1px solid rgb(228, 223, 223);
 
     .header-item {
       font-weight: 400;
       line-height: 17px;
       font-size: 12px;
-      color: rgba(100, 100, 100, 0.5);
+      color: rgb(100, 100, 100, 0.5);
       padding: 15px 0 15px 0;
       cursor: pointer;
       user-select: none;
