@@ -4,7 +4,7 @@ import { LOG_IN, LOG_OUT } from "./actions";
 const initialState: initialStateProps = {
   email: "r.guseinov.rgs@gmail.com",
   password: "Rauf2738",
-  isLogged: true,
+  isLogged: false,
 };
 
 export const AuthorizationReducer = (state = initialState, action: IAction) => {

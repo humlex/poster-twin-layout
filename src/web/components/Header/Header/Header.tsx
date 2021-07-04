@@ -1,10 +1,10 @@
-import React, { FC, useState } from 'react';
-import { ImTable2 } from 'react-icons/im';
-import { RiArrowDownSFill } from 'react-icons/ri';
-import { CgExport } from 'react-icons/cg';
-import { AiOutlinePrinter } from 'react-icons/ai';
+import React, { FC, useState } from "react";
+import { ImTable2 } from "react-icons/im";
+import { RiArrowDownSFill } from "react-icons/ri";
+import { CgExport } from "react-icons/cg";
+import { AiOutlinePrinter } from "react-icons/ai";
 
-import './styles.scss';
+import "./styles.scss";
 
 interface HeaderProps {
   title: string;
@@ -16,7 +16,6 @@ const Header: FC<HeaderProps> = ({ title, children }) => {
 
   return (
     <>
-      <div className="props">{children}</div>
       <header className="clients-header">
         <div className="info">
           <span className="title">{title}</span>
@@ -35,6 +34,7 @@ const Header: FC<HeaderProps> = ({ title, children }) => {
               Столбцы
             </span>
             <RiArrowDownSFill className="item-icon" />
+            {isOpen && children}
           </div>
           <div className="export">
             <CgExport className="item-icon" />
